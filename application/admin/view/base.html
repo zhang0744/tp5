@@ -61,7 +61,7 @@
                     {block name="menu2"}<li>{/block}
                         <a href="{:url('layouts')}"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
                     </li>
-                    <li>
+                    {block name="menu3"}<li>{/block}
                         <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li><a href="graph_flot.html">Flot Charts</a></li>
@@ -69,7 +69,7 @@
                             <li><a href="graph_rickshaw.html">Rickshaw Charts</a></li>
                             <li><a href="graph_chartjs.html">Chart.js</a></li>
                             <li><a href="graph_chartist.html">Chartist</a></li>
-                            <li><a href="c3.html">c3 charts</a></li>
+                            {block name="menu3_6"}<li>{/block}<a href="{:url('c3')}">c3 charts</a></li>
                             <li><a href="graph_peity.html">Peity Charts</a></li>
                             <li><a href="graph_sparkline.html">Sparkline Charts</a></li>
                         </ul>
