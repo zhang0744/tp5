@@ -15,9 +15,9 @@ return [
     // +----------------------------------------------------------------------
 
     // 应用调试模式
-    'app_debug'              => false,
+    'app_debug'              => true,
     // 应用Trace
-    'app_trace'              => false,
+    'app_trace'              => true,
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
@@ -239,5 +239,13 @@ return [
         'type'      => 'bootstrap',
         'var_page'  => 'page',
         'list_rows' => 15,
+    ],
+
+    //输出替换
+    'view_replace_str'  =>  [
+        '__CSS__'=>'/static/css',
+        '__JS__' =>'/static/js',
+        '__IMG__' =>'/static/img',
+        '__FONT__' =>'/static/font-awesome',
     ],
 ];
