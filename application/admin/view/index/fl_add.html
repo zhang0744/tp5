@@ -1,0 +1,188 @@
+{extend name="base"}
+{block name="title"}INSPINIA | Nestable list{/block}
+{block name="link"}
+{__block__}
+{/block}
+{block name="menu10"}<li class="active">{/block}
+{block name="menu10_2"}<li class="active">{/block}
+{block name="content"}
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Nestable list</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a>Tables</a>
+            </li>
+            <li class="active">
+                <strong>Nestable list</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight">
+    <div class="row">
+        <div class="col-md-4">
+            <div id="nestable-menu">
+                <button type="button" data-action="expand-all" class="btn btn-white btn-sm">Expand All</button>
+                <button type="button" data-action="collapse-all" class="btn btn-white btn-sm">Collapse All</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="ibox float-e-margins">
+            <div class="col-md-4">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Nestable custom theme list</h5>
+                    </div>
+                    <div class="ibox-content">
+
+                    <p class="m-b-lg">
+                        Each list you can customize by standard css styles. Each element is responsive so you can add to it any other element to improve functionality of list.
+                    </p>
+
+                    <div class="dd" id="nestable2">
+                        <ol class="dd-list">
+                            <li class="dd-item" data-id="1">
+                                <div class="dd-handle">
+                                    <span class="label label-info"><i class="fa fa-users"></i></span> Cras ornare tristique.
+                                </div>
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="2">
+                                        <div class="dd-handle">
+                                            <span class="pull-right"> 12:00 pm </span>
+                                            <span class="label label-info"><i class="fa fa-cog"></i></span> Vivamus vestibulum nulla nec ante.
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="3">
+                                        <div class="dd-handle">
+                                            <span class="pull-right"> 11:00 pm </span>
+                                            <span class="label label-info"><i class="fa fa-bolt"></i></span> Nunc dignissim risus id metus.
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="4">
+                                        <div class="dd-handle">
+                                            <span class="pull-right"> 11:00 pm </span>
+                                            <span class="label label-info"><i class="fa fa-laptop"></i></span> Vestibulum commodo
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
+
+                            <li class="dd-item" data-id="5">
+                                <div class="dd-handle">
+                                    <span class="label label-warning"><i class="fa fa-users"></i></span> Integer vitae libero.
+                                </div>
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="6">
+                                        <div class="dd-handle">
+                                            <span class="pull-right"> 15:00 pm </span>
+                                            <span class="label label-warning"><i class="fa fa-users"></i></span> Nam convallis pellentesque nisl.
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="7">
+                                        <div class="dd-handle">
+                                            <span class="pull-right"> 16:00 pm </span>
+                                            <span class="label label-warning"><i class="fa fa-bomb"></i></span> Vivamus molestie gravida turpis
+                                        </div>
+                                    </li>
+                                    <li class="dd-item" data-id="8">
+                                        <div class="dd-handle">
+                                            <span class="pull-right"> 21:00 pm </span>
+                                            <span class="label label-warning"><i class="fa fa-child"></i></span> Ut aliquam sollicitudin leo.
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    </div>
+                    <div class="ibox-content">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Activites</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="get" class="form-horizontal">
+                            <div class="form-group"><label class="col-sm-2 control-label">Normal</label>
+                                <div class="col-sm-10"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group"><label class="col-sm-2 control-label">Select</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control m-b" name="account">
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{/block}
+{block name="njs"}
+{__block__}
+<script src="__JS__/plugins/nestable/jquery.nestable.js"></script>
+<script>
+         $(document).ready(function(){
+
+             var updateOutput = function (e) {
+                 var list = e.length ? e : $(e.target),
+                         output = list.data('output');
+                 if (window.JSON) {
+                     output.val(window.JSON.stringify(list.nestable('serialize')));//, null, 2));
+                 } else {
+                     output.val('JSON browser support required for this demo.');
+                 }
+             };
+             $('#nestable2').nestable({
+                 group: 1
+             }).on('change', updateOutput);
+             updateOutput($('#nestable2').data('output', $('#nestable2-output')));
+
+             $('#nestable-menu').on('click', function (e) {
+                 var target = $(e.target),
+                         action = target.data('action');
+                 if (action === 'expand-all') {
+                     $('.dd').nestable('expandAll');
+                 }
+                 if (action === 'collapse-all') {
+                     $('.dd').nestable('collapseAll');
+                 }
+             });
+         });
+    </script>
+{/block}

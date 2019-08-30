@@ -247,5 +247,6 @@ return [
         '__JS__' =>'/static/js',
         '__IMG__' =>'/static/img',
         '__FONT__' =>'/static/font-awesome',
+        '__WJ__' =>'/static/wenjianshangchuan/bootstrap-fileinput-master',
     ],
 ];

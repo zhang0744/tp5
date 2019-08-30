@@ -1,0 +1,141 @@
+{extend name="base"}
+
+{block name="menu11"}<li class="active">{/block}
+
+{block name="menu11_4"}<li class="active">{/block}
+
+{block name="title"}INSPINIA | Resizeable Panels{/block}
+
+{block name="link"}
+{__block__}
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="font-awesome/css/font-awesome.css" rel="stylesheet"> -->
+    <link href="__CSS__/plugins/jQueryUI/jquery-ui.css" rel="stylesheet">
+    <!-- <link href="css/animate.css" rel="stylesheet"> -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+{/block}
+
+{block name="content"}
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>Resizeable panels</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a>Tables</a>
+                </li>
+                <li class="active">
+                    <strong>Resizeable panels</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+    </div>
+    <div class="wrapper wrapper-content  animated fadeInRight">
+
+
+        <div class="resizable-panels">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>
+                        Resizable
+                    </h5>
+
+                    <div class="ibox-tools">
+                        <label class="label label-primary">Resize me!</label>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <h2>
+                        This is simple box container nr. 1
+                    </h2>
+
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged.
+                    </p>
+                </div>
+            </div>
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>
+                        Resizable
+                    </h5>
+                </div>
+                <div class="ibox-content">
+                    <h2>
+                        This is simple box container nr. 2
+                    </h2>
+
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged.
+                    </p>
+                </div>
+            </div>
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>
+                        Resizable
+                    </h5>
+                </div>
+                <div class="ibox-content">
+                    <h2>
+                        This is simple box container nr. 3
+                    </h2>
+
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged.
+                    </p>
+                </div>
+            </div>
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>
+                        Resizable
+                    </h5>
+                </div>
+                <div class="ibox-content">
+                    <h2>
+                        This is simple box container nr. 4
+                    </h2>
+
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged.
+                    </p>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+{/block}
+            
+{block name="ljs"}
+{__block__}
+    <!-- Touch Punch - Touch Event Support for jQuery UI -->
+    <script src="__JS__/plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
+{/block}
+
+{block name="njs"}
+    <script>
+        $(document).ready(function () {
+
+            $(".ibox").resizable({
+                helper: "ui-resizable-helper",
+                grid: 20
+            });
+
+        });
+    </script>
+{/block}

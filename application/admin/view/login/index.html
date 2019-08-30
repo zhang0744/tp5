@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>重置密码</title>
+</head>
+<body>
+	<h1>输入邮箱重置密码</h1>
+	<p>邮箱: <input type="text" name="email" id="email"><span id="chkmsg"></span></p>
+	<p><input type="button" id="sub" value="提交"></p>
+	<p class="demo"></p>
+</body>
+
+<script src="__JS__/jquery-3.1.1.min.js"></script>
+<script>
+$(function(){
+	$("#sub").click(function(){
+		var email = $("#email").val();
+		var preg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/; //匹配Email
+		if(email=='' || !preg.test(email)){
+			$("#chkmsg").html("请填写正确的邮箱！");
+		}else{
+			$("#sub").attr("disabled","disabled").val('提交中..').css("cursor","default");
+			$.post("{:url('sendmail')}",{mail:email},function(msg){
+				if(msg=="noreg"){
+					$("#chkmsg").html("该邮箱尚未注册！");
+					$("#sub").removeAttr("disabled").val('提 交').css("cursor","pointer");
+				}else{
+					$(".demo").html("<h3>"+msg+"</h3>");
+				}
+			});
+		}
+	});
+})
+</script>
+</html>
